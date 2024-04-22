@@ -1,3 +1,3 @@
 # Semaine de C++
 
-## Apprentissage des Bases du C++
+# Apprentissage des Bases du C++
