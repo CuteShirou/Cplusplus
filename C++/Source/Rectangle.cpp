@@ -1,11 +1,13 @@
-class Rectangle
+#include "Rectangle.h"
+
+Rectangle::Rectangle()
 {
-public:
-	Rectangle();
-	virtual ~Rectangle();
-protected:
-	int rectWidth;
-	int rectHeight;
-	int rectx;
-	int recty;
-};
+}
+
+Rectangle::Rectangle(int width, int height, int x, int y)
+{
+}
+
+Rectangle::~Rectangle()
+{
+}
