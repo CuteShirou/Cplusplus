@@ -7,8 +7,8 @@ public:
 	void PoseSet(int x, int y);
 	void SizeSet(int width, int height);
 
-	int GetPose();
-	int GetSize();
+	virtual int GetPose();
+	virtual int GetSize();
 
 	virtual ~Rectangle();
 
@@ -31,8 +31,9 @@ public:
 	void SetScale(float scale);
 	float GetScale();
 
-	int GetWidth();
-	int GetHeight();
+	virtual int GetWidth();
+	virtual int GetHeight();
+	virtual int GetAera();
 
 	virtual ~UserRectangle();
 
