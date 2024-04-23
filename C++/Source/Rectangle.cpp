@@ -37,3 +37,41 @@ int Rectangle::GetSize()
 Rectangle::~Rectangle()
 {
 }
+
+UserRectangle::UserRectangle()
+{
+	userId = 0;
+}
+
+UserRectangle::UserRectangle(int width, int height, int x, int y, int id)
+{
+}
+
+void UserRectangle::SetId(int id)
+{
+}
+
+int UserRectangle::GetId()
+{
+	return 0;
+}
+
+UserRectangle::~UserRectangle()
+{
+}
+
+void UserRectangle::SetScale(float scale) {
+	m_scale = scale;
+}
+
+float UserRectangle::GetScale() {
+	return m_scale;
+}
+
+int UserRectangle::GetWidth() {
+	return rectWidth * m_scale;
+}
+
+int UserRectangle::GetHeight() {
+	return rectHeight * m_scale;
+}
