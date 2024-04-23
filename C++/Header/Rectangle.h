@@ -18,3 +18,25 @@ protected:
 	int rectx;
 	int recty;
 };
+
+class UserRectangle : public Rectangle
+{
+public:
+	UserRectangle();
+	UserRectangle(int width, int height, int x = 0, int y = 0, int id = 0);
+
+	void SetId(int id);
+	int GetId();
+
+	void SetScale(float scale);
+	float GetScale();
+
+	int GetWidth();
+	int GetHeight();
+
+	virtual ~UserRectangle();
+
+private:
+	int userId;
+	float m_scale;
+};
