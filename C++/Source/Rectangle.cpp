@@ -41,10 +41,17 @@ Rectangle::~Rectangle()
 UserRectangle::UserRectangle()
 {
 	userId = 0;
+	m_scale = 1.0f;
 }
 
 UserRectangle::UserRectangle(int width, int height, int x, int y, int id)
 {
+	userId = id;
+	rectWidth = width;
+	rectHeight = height;
+	rectx = x;
+	recty = y;
+	m_scale = 1.0f;
 }
 
 void UserRectangle::SetId(int id)
@@ -61,17 +68,23 @@ UserRectangle::~UserRectangle()
 }
 
 void UserRectangle::SetScale(float scale) {
-	m_scale = scale;
+    m_scale = scale;
 }
 
 float UserRectangle::GetScale() {
-	return m_scale;
+    return m_scale;
 }
 
 int UserRectangle::GetWidth() {
-	return rectWidth * m_scale;
+    return rectWidth * m_scale;
 }
 
 int UserRectangle::GetHeight() {
-	return rectHeight * m_scale;
+    return rectHeight * m_scale;
+}
+
+int UserRectangle::GetAera()
+{
+	int area = rectWidth * rectHeight;
+	return area;
 }
