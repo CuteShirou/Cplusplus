@@ -3,17 +3,21 @@
 
 main()
 {
-	Rectangle rect1;
-	Rectangle rect2(10, 20, 30, 40);
+	Rectangle rect;
+	rect.SizeSet(10, 20);
+	rect.PoseSet(5, 5);
+	std::cout << "Size: " << rect.GetSize() << std::endl;
+	std::cout << "Pose: " << rect.GetPose() << std::endl;
 
-	rect1.SizeSet(100, 200);
-	rect1.PoseSet(300, 400);
-
-	std::cout << "rect1 size: " << rect1.GetSize() << std::endl;
-	std::cout << "rect1 pose: " << rect1.GetPose() << std::endl;
-
-	std::cout << "rect2 size: " << rect2.GetSize() << std::endl;
-	std::cout << "rect2 pose: " << rect2.GetPose() << std::endl;
-
-	return 0;
+	UserRectangle userRect;
+	userRect.SizeSet(10, 20);
+	userRect.PoseSet(5, 5);
+	userRect.SetId(1);
+	userRect.SetScale(1.5f);
+	std::cout << "Size: " << userRect.GetSize() << std::endl;
+	std::cout << "Pose: " << userRect.GetPose() << std::endl;
+	std::cout << "Id: " << userRect.GetId() << std::endl;
+	std::cout << "Scale: " << userRect.GetScale() << std::endl;
+	std::cout << "Width: " << userRect.GetWidth() << std::endl;
+	std::cout << "Height: " << userRect.GetHeight() << std::endl;
 }
