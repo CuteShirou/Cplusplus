@@ -1,4 +1,6 @@
+#pragma once
 #include <vector>
+#include "Joueur.h"
 
 class  Route
 {
@@ -15,7 +17,7 @@ public:
 	int GetRouteGlobale(int index);
 
 	void MoveRight();
-	void MoveLeft()
+	void MoveLeft();
 
 	bool IsPlayerOnRoad(int playerX, int PlayerY);
 
