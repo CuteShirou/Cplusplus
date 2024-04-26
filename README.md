@@ -4,3 +4,4 @@
 - Exercice 1 : Création d'un rectangle avec 4 variables & 1 constructeurs/destructeur
 - Exercice 2 : Héritage + Cast 
 - Exercice 3 : Crée un petit jeu
+- Exercice 4 : Mini Jeu console (Niveau Avancée)
