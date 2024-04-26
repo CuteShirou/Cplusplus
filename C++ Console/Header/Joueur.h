@@ -1,10 +1,22 @@
+#pragma once
+
 class Joueur
 {
-public :
-	Joueur();
+public:
+    Joueur(int screenWidth);
+    virtual ~Joueur();
 
-	virtual ~Joueur();
+    void MoveRight();
 
-protected:
-	void Joueur();
+    void MoveLeft();
+
+    bool IsCollision(int obstacleX, int obstacleY);
+
+    int PlayerX() const;
+
+    int PlayerY() const;
+
+private:
+    int x; 
+    int screenWidth;
 };
